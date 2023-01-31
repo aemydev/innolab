@@ -1,0 +1,91 @@
+.toolbar{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    height: 1.875rem;
+    background-color:#134E4A;
+    border-bottom:0.025rem solid #11423f;
+}
+
+.toolbarWindowControls{
+    display:flex;
+}
+
+.toolbarMainMenu{
+    display:flex;
+}
+
+.toolbarLogo{
+    padding: 0.125rem 1rem;
+}
+
+.toolbarMenuItem{
+    padding:0.125rem 1rem;
+}
+
+.toolbarMenuItem:hover{
+    background-color:#115E59;
+    transition: background-color 0.125s;
+}
+
+.toolbarGroup{
+    display:flex;
+}
+
+/* WindowControls */
+.toolbarWindowControls li{
+    padding: 0.125rem 0.75rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbarWindowControls li:hover{
+    background-color: #115E59;
+    transition: background-color 0.125s;
+}
+
+.toolbarWindowControls li.red-hover:hover{
+    background-color: red;
+    transition: background-color 0.125s;
+}
+
+.icon{
+    fill:white;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*top:1.870rem;*/
+    background-color: #134E4A;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content li{
+    padding: 0.125rem 2rem;
+}
+
+.dropdown-content li:hover{
+    padding: 0.125rem 2rem;
+    background-color: #21978f;
+    cursor: pointer;
+}
+
+.open{
+    display:block;
+}
+
+.dropdownBtn{
+    cursor: pointer;
+}
+
+.test{
+    position:fixed;
+    width:100%;
+}

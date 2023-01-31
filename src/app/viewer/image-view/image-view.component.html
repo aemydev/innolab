@@ -1,0 +1,14 @@
+<div class="h-full bg-stone-800">
+    <div 
+    *ngIf="true"
+        class="img-container"
+    >
+        <img *ngIf="selectedFile"
+        id="image"
+        src="{{selectedFile}}"
+        class="inno-img" 
+        appZoom
+        fetchpriority="high"
+        >
+    </div>
+</div>

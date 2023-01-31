@@ -1,0 +1,25 @@
+<nav class="bg-emerald-900 toolbar test">
+    <div class="toolbarGroup">
+      <div class="toolbarLogo">L</div>
+      <ul class="toolbarMainMenu">
+        <li class="toolbarMenuItem" appDropdown>
+          <span class="dropdownBtn"> Workspace </span>
+          <ul class="dropdown-content">
+            <li (click)="onCloseWorkspace()">Close Workspace</li>
+          </ul>
+        </li>
+        <li class="toolbarMenuItem" appDropdown>
+          <span class="dropdownBtn">View</span>
+          <ul class="dropdown-content">
+            <li>Explorer</li>
+          </ul>
+        </li>
+        <li class="toolbarMenuItem" ><a routerLink="/settings">Settings</a></li>
+        <li class="toolbarMenuItem"><a routerLink="/help">Help</a></li>
+      </ul>
+    </div>
+  
+    <ul class="toolbarWindowControls">
+    </ul>
+  </nav>
+  

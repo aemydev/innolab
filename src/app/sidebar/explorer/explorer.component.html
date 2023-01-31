@@ -1,0 +1,68 @@
+<div class="flex flex-col justify-between items-center h-full w-full">
+  <div *ngIf="workspacePath == undefined">
+    <p class="text-bold pb-3 px-5 pt-3 self-start">EXPLORER</p>
+    <div class="px-5">
+      <p>Öffne einen existierenden Workspace</p>
+      <!-- Open Workspace -->
+      <div class="parent-div btn">
+        <button class="btn-upload" (click)="onOpenWorkspace()">
+          Workspace öffnen
+        </button>
+      </div>
+
+      <p class="light pt-5">Oder erstelle einen neuen Workspace</p>
+      <!-- New Workspace -->
+      <div class="parent-div btn">
+        <button class="btn-upload" (click)="onCreateWorkspace()">
+          Neuen Workspace erstellen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="workspacePath != undefined" class="w-full h-full no-scroll flex flex-col justify-between">
+    <div class="px-5 pt-3">
+      <p class="text-bold pb-3 self-start">{{ projectName }}</p>
+    </div>
+
+    <!-- File Tree -->
+    <div class="scroll" routerLink="/">
+      <ul class="">
+        <!-- Iterate over file -->
+        <li *ngFor="let file of files">
+          <!-- Folder? -->
+          <div *ngIf="file.type == 'folder'" appExpandable>
+            <span class="toggleBtn hover px-5">📁 {{ file.filename }}</span>
+            <ul class="content">
+              <li *ngFor="let subfile of file.content">
+                <!-- If folder ...  -->
+                <div *ngIf="subfile.type == 'folder'" appExpandable>
+                  <span class="toggleBtn px-5">🖼️{{ subfile.filename }}</span>
+                  <ul class="content"></ul>
+                </div>
+                <!-- If File ... -->
+                <div *ngIf="!(subfile.type == 'folder')">
+                  <span class="hover px-5" (click)="onSelectFile(subfile)"
+                    >🖼️ {{ subfile.filename }}</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- File? -->
+          <div *ngIf="!(file.type == 'folder')">
+            <span class="hover px-5" (click)="onSelectFile(file)"
+              >🖼️ {{ file.filename }}</span
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="workspacePath != undefined" class="w-full">
+      <button class="btn btn-reload" (click)="onReloadWorkspace()">
+        Aktualisieren
+      </button>
+    </div>
+  </div>
+</div>

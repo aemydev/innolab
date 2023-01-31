@@ -1,0 +1,132 @@
+.scroll {
+  overflow-y: scroll;
+  height:100%;
+}
+
+.no-scroll{
+  overflow-y:hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: #0d9488;
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.2rem;
+}
+
+.new-workspace {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+
+/*.parent-div {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .parent-div input[type=file] {
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+  }*/
+
+.btn-upload {
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+
+/* Expandable Content */
+.content {
+  display: none;
+}
+
+.content li {
+  padding: 0.25rem 0;
+}
+
+.content li span{
+  padding-left: 2.5rem;
+  display:block;
+}
+
+ li {
+  padding: 0.25rem 0;
+}
+
+.hover:hover{
+  background-color: #0f766e;
+  display:block;
+  width:100%;
+}
+
+/* Make Content visible */
+.show {
+  display: block !important;
+}
+
+/* TogglBtn*/
+.toogleBtn {
+  cursor: pointer;
+}
+
+/* Icons */
+.experiment::before {
+  content: "▼";
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.folderIcon {
+  list-style-type: circle;
+  //list-style-type: url('../../../assets/icons/folder.svg');
+}
+
+.fileIcon {
+  list-style-type: square;
+  //list-style-type: url('../../../assets/icons/folder.svg');
+}
+
+/*.folder::before{
+  content:"📁";
+
+  padding-left:1rem;
+  padding-right:0.5rem;
+}
+
+.file::before {
+  content: "[File]";
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /*top:1.870rem;*/
+  background-color: #134E4A;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.btn-reload {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,0 +1,19 @@
+<div class="bg-teal-900 h-full px-3 py-5" *ngIf="selectedFile">
+    <div class="info">
+        <p><b>Filename:</b> {{selectedFile.filename}}</p>
+    </div>
+
+    <div class="pt-10">
+        <button class="btn my-3" (click)="onCalculateFusionIndex()">Fusion Index berechnen</button>
+        <button class="btn my-3" (click)="onCalcAngle()">Mittleren Winkel berechen</button>
+    </div>
+
+    <div class="mt-10">
+        <div id="fusionindex" class="text-center" *ngIf="fusionindex">
+            Fusion Index: {{fusionindex}}
+        </div>
+        <div id="angle" class="text-center" *ngIf="angle">
+            Angle: {{angle}}°
+        </div>
+    </div>
+</div>

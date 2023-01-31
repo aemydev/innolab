@@ -1,0 +1,17 @@
+.icon-display{
+    font-size: 2.188rem; /*35px*/
+    height: 3.75rem; 
+    width: 3.75rem;
+    color:#909695;
+    padding : 0.625rem;
+}
+
+.icon-display:hover{
+    color:white;
+    transition: color 0.2s;
+}
+
+.selected{
+    border-left:0.25rem white solid;
+    color:white;
+}

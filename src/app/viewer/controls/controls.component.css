@@ -1,0 +1,17 @@
+.info{
+    border:solid 0.1rem teal;
+    padding:0.5rem;
+    border-radius:0.25rem;
+}
+p{
+    padding:0rem;
+    margin:0rem;
+}
+
+.btn {
+  background-color: #0d9488;
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.2rem;
+}
