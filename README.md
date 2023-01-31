@@ -18,3 +18,7 @@ Run `npm run electron` to start the project in development mode.
 If it does not yet exist run npm run package to generate .exe (Removed in submission due to large size)
 
 Start the project via. out/inno.frontend-win32-x64/inno-frontend.exe
+
+# Old repo
+
+https://github.com/aemydev/inno.frontend
